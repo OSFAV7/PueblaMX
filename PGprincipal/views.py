@@ -5,4 +5,4 @@ from django.shortcuts import render, HttpResponse
 
 def inicio(request):
 
-    return render(request, "PGprincipal/home.html")
+    return render(request, "PGprincipal/index.html")
