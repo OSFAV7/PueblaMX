@@ -1,4 +1,5 @@
 # PueblaMX
+vale verga el entorno(ignora lo demas)
 
 Al descargar el repositorio para poder ver la pagina debes abrir cmd y abrir el achivo "activate.bat" desde la terminal de cmd.
 El arcvivo se encuentra en "\Entorno\Scripts" recuerda que debes ejecutar el archivo desde la teminal.
