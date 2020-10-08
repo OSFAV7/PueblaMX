@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('PGprincipal.urls')),
     path('asis/', include('ControlAsistencia.urls')),
+    path('log/', include('usuarios.urls')),
 ]
