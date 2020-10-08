@@ -50,7 +50,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="{% url 'logueo' %}">Tablero de herramientas</a></li>
+          <li class="active"><a onclick="abrir_modal_login('{% url 'logueo' %}')">Tablero de herramientas</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -64,6 +64,12 @@
 
     </div>
   </header><!-- End Header -->
+
+   <!-- ======= modal loggin ======= -->
+   <div class="modal fade" id="log" role="dialog">
+
+
+   </div>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -264,6 +270,17 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'PGprincipal/js/main.js' %}"></script>
+
+  <script type="text/javascript">
+    var $ = jQuery.noConflict();
+    function abrir_modal_login(url){
+      $('#log').load(url,function(){
+        $(this).modal('show');
+      });
+
+    }
+    
+</script>
 
 </body>
 
