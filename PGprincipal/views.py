@@ -1,8 +1,9 @@
 from django.shortcuts import render, HttpResponse
+from django.views.generic import TemplateView
 
 # Create your views here.
 
 
-def inicio(request):
 
-    return render(request, "PGprincipal/index.html")
+class inicio(TemplateView):
+    template_name="PGprincipal/index.html"

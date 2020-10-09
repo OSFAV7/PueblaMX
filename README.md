@@ -9,3 +9,5 @@ cd (pegar la direción) y dar a enter, una vez en el directorio solo escribir "a
 
 Una vez activado el entorno debe regresar al directorio principal (coloque 2 veces cd..), una vez en el directorio usar el comado "manage.py runserver" para ejecuar el servidor 
 y visualizar la pagina en el navegador, direcion "localhost:800".
+
+usuario = 08102020
