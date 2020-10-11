@@ -32,22 +32,25 @@
 
       </div>
       <div class="modal-body">
-        <form action="{% url 'principal' %}">
+        <form action=".">
+            {% csrf_token %}
             <div class="input-group form-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fas fa-user"></i></span>
                 </div>
-                <input type="text" class="form-control" placeholder="username">
+                {{ form.username }}
+                
                 
             </div>
             <div class="input-group form-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fas fa-key"></i></span>
                 </div>
-                <input type="password" class="form-control" placeholder="password">
+                {{ form.password }}
+                
             </div>
             <div class="row align-items-center remember">
-                <input type="checkbox">Remember Me
+                <input type="checkbox">olvido
             </div>
             <div class="form-group">
                 <input type="submit" value="Login" class="btn float-right login_btn">
@@ -56,8 +59,9 @@
       </div>
       <div class="modal-footer solid">
         <div class="d-flex justify-content-center">
-            <a href="{% url 'principal' %}">Forgot your password?</a>
+            <a href="">Forgot your password?</a>
         </div>
       </div>
     </div>
   </div>
+</div>

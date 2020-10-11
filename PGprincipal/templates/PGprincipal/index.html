@@ -6,12 +6,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Company Bootstrap Template - Index</title>
+  <title>RAMPER MX</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'PGprincipal/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'PGprincipal/img/RAMPER.ico' %}" rel="icon">
   <link href="{% static 'PGprincipal/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -124,7 +124,7 @@
   </section><!-- End Hero -->
 
  <!-- ======= modal loggin ======= -->
- <div class="modal fade" id="log" role="dialog"></div>>
+ <div class="modal fade" id="log" tabindex="-1" role="dialog" aria-labelledby="logTitle" aria-hidden="true"></div>>
 
 
 </div>
@@ -277,9 +277,16 @@
     function abrir_modal_login(url){
       $('#log').load(url,function(){
         $(this).modal('show');
+        $("#log").on('hidden.bs.modal', function () {
+          location.reload(true);  
+    });
+  
+        
       });
+      
 
     }
+
     
   </script>
 
